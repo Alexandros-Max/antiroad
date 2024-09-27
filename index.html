@@ -22,27 +22,45 @@
   </style>
 </head>
 
-<body class="dark-mode">
+<body class="dark-mode position-relative">
+
+
+    <div class="site-intro-img">
+      <img src="https://cdn.prod.website-files.com/61a993eb9a24396d472b7770/61a99a988b4f23100cbdaaf2_image1.jpg" loading="lazy" alt="" sizes="100vw"  class="hero_img">
+    </div>
 
    <header class="navibar">
     <div class="container-fluid">
-      <div class="row">
+      <div class="row align-items-center justify-content-between">
+        <div class="col main-nav nav-left">
+          <ul class="navi-list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="exploring.html">Exploring</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
         <div class="col header-logo">
-          <a href="index.html" alt="Antiroad.team">
+          <a href="index.html" alt="Antiroad Team" class="d-block">
             <img src="images/logo_wh.svg" alt="">
           </a>
         </div>
-        <div class="col main-nav">
+        <div class="col main-nav nav-right">
           <ul class="navi-list">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="exploring.html">Exploring</a></li>
-            <li><a href="vehicles.html">Vehicles</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="racing.html">Competition Team</a></li>
+            <li><a href="app.html">Racing Clock</a></li>
           </ul>
         </div>
       </div>
     </div>
    </header>
+   
+   <div class="site-intro-img">
+    <img src="https://cdn.prod.website-files.com/61a993eb9a24396d472b7770/61a99a988b4f23100cbdaaf2_image1.jpg" loading="lazy" alt="" sizes="100vw"  class="hero_img">
+  </div>
+  
+  <div class="site-intro-img">
+    <img src="https://cdn.prod.website-files.com/61a993eb9a24396d472b7770/61a99a988b4f23100cbdaaf2_image1.jpg" loading="lazy" alt="" sizes="100vw"  class="hero_img">
+  </div>
 
   
   <!-- JavaScripts -->
@@ -65,17 +83,8 @@
   <!-- Main Script -->
   <script src="js/script.js"></script>
 
+  <script src="js/gsap_scripts.js"></script>
 
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-  <script>
-  gsap.registerPlugin(ScrollTrigger);
-  
-  ScrollTrigger.defaults({
-    markers: false
-  });
-  </script>
 
 </body>
 

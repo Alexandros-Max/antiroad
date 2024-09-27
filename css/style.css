@@ -424,7 +424,25 @@ section{
 /* Header CSS - Navigation bar */
 .navibar {
   padding: 10px 0;
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+.navibar::after {
+  content: '';
+  width: 250px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: transparent;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border-bottom: 150px solid black;
+  z-index: -1;
 }
 .is-sticky {
   position: fixed;
@@ -454,15 +472,25 @@ section{
       transform: translateY(0)
   }
 }
+.navibar .header-logo {
+  position: absolute;
+  text-align: center;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .navibar .header-logo img {
-  width: 140px;
+  width: 250px;
 }
 .navi-list {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   gap: 20px;
   font-size: 20px;
+  height: 100px;
+}
+.nav-right .navi-list {
+  justify-content: flex-end;
 }
 .menu-btn {
   gap: 5px;
@@ -1247,4 +1275,14 @@ section{
     margin-left: 0;
     margin-top: -10px;
   }
+}
+.hero_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.site-intro-img {
+  width: 100%;
+  height: 100vh;
 }
